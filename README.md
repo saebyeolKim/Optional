@@ -41,6 +41,9 @@ public void ifPresent(Consumer<? super T> action)
 //Optional이 null이 아니면 map에서 지정한 값 반환
 public <U> Optional<U> map(Function<? super T, ? extends U> mapper)
 ```
+
+📌 List<> 는 Optional 을 해줄 필요가 없다. return 값이 null 이 아니라 size() == 0 으로 오기 때문에
+null 을 처리할 수 없기 때문이다.</br>
 참고 </br>
 https://hbase.tistory.com/212 </br>
 https://jeongkyun-it.tistory.com/168 </br>
